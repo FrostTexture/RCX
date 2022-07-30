@@ -1,5 +1,5 @@
-getgenv().autoClicker = false
-getgenv().autoRebirth = false
+autoClicker = false
+autoRebirth = false
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
@@ -20,6 +20,6 @@ while getgenv().autoClicker == true do
    task.wait()
 end
     else
-        getgenv().autoClicker = false
+        autoClicker = false
     end
 end)
