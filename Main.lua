@@ -14,8 +14,8 @@ local e = Window:NewTab("Credits")
 local a1 = a:NewSection("Autoclicker")
 a1:NewToggle("Autoclicker", "An autoclicker", function(state)
     if state then
-        getgenv().autoClicker = true
-while getgenv().autoClicker == true do
+        autoClicker = true
+while autoClicker == true do
    game:GetService("ReplicatedStorage").Events.Click3:FireServer()
    task.wait()
 end
