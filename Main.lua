@@ -9,7 +9,6 @@ local a = Window:NewTab("Main")
 local b = Window:NewTab("Eggs")
 local c = Window:NewTab("Misc")
 local d = Window:NewTab("Settings")
-local e = Window:NewTab("Credits")
 
 local a1 = a:NewSection("Autoclicker")
 a1:NewToggle("Autoclicker", "An autoclicker", function(state)
@@ -23,3 +22,12 @@ end
         autoClicker = false
     end
 end)
+
+local a2 = a:NewSection("Remote")
+a2:NewButton("World Boost", "250,000x World Boost", function()
+    local worldBoost250kx = { [1] = "75M" }
+    game:GetService("ReplicatedStorage").Events.WorldBoost:FireServer(unpack(worldBoost250kx))
+    print("250,000x World Boost was given!")
+end)
+
+
