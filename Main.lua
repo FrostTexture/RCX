@@ -5,11 +5,11 @@ autoRebirth = false
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Rebirth Champions X [RCX]", "GrapeTheme")
 
-local a = Window:NewTab("Credits")
-local b = Window:NewTab("Main")
-local c = Window:NewTab("Eggs")
-local d = Window:NewTab("Misc")
-local e = Window:NewTab("Settings")
+local a = Window:NewTab("Main")
+local b = Window:NewTab("Eggs")
+local c = Window:NewTab("Misc")
+local d = Window:NewTab("Settings")
+local e = Window:NewTab("Credits")
 
 local a1 = a:NewSection("Autoclicker")
 a1:NewToggle("Autoclicker", "An autoclicker", function(state)
